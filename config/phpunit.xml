@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit bootstrap="../Autoloader.php">
     <testsuites>
-        <testsuite name="Inheritance">
+        <testsuite name="inheritance">
          	 <directory>../tests/library/Inheritance</directory>
         </testsuite> 
-        <testsuite name="Composition">
+        <testsuite name="composition">
          	 <directory>../tests/library/Strategy</directory>
         </testsuite>
-	<testsuite name="Generating_objects">
-		<directory>../tests/library/Singleton</directory>
-	</testsuite>
-	<testsuite name="Factory_method">
-		<directory>../tests/library/Factory</directory>
-	</testsuite>
-	<testsuite name="Prototype_pattern">
-		<directory>../tests/library/Prototype</directory>
-	</testsuite>
-	<testsuite name="Composite_pattern">
-		<directory>../tests/library/Composite</directory>
-	</testsuite>          
+		<testsuite name="generating_objects">
+			<directory>../tests/library/Singleton</directory>
+		</testsuite>
+		<testsuite name="factory_method">
+			<directory>../tests/library/Factory</directory>
+		</testsuite>
+		<testsuite name="prototype_pattern">
+			<directory>../tests/library/Prototype</directory>
+		</testsuite>
+		<testsuite name="composite_pattern">
+			<directory>../tests/library/Composite</directory>
+		</testsuite>     
+		<testsuite name="strategy_validation">
+			<directory>../tests/library/StrategyValidation</directory>
+		</testsuite>       
     </testsuites>
 </phpunit>
