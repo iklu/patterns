@@ -1,5 +1,5 @@
 <?php
-namespace src\library\Observer;
+namespace src\library\Observer\Interfaces;
 /**
  * Created by PhpStorm.
  * User: ovidiu

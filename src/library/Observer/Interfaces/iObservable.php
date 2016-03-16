@@ -1,5 +1,6 @@
 <?php
-namespace src\library\Observer;
+
+namespace src\library\Observer\Interfaces;
 /**
  * Created by PhpStorm.
  * User: ovidiu
@@ -8,7 +9,7 @@ namespace src\library\Observer;
  */
 interface iObservable
 {
-    function attach( iObserver $observer );
-    function detach( iObserver $observer );
+    function attach(iObserver $observer);
+    function detach(iObserver $observer);
     function notify();
 }

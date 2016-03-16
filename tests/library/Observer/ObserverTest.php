@@ -1,7 +1,9 @@
 <?php
 namespace test\library\Observer;
 use src\library\Observer\Login;
-use src\library\Observer\SecurityMonitor;
+use src\library\Observer\Monitors\GeneralLogger;
+use src\library\Observer\Monitors\PartnershipTool;
+use src\library\Observer\Monitors\SecurityMonitor;
 /**
  * Created by PhpStorm.
  * User: ovidiu
@@ -13,7 +15,9 @@ class ObserverTest extends \PHPUnit_Framework_TestCase
     public function testLogin(){
         echo "TEST LOGIN ==========================================================>\n";
         $login = new Login();
-        $login->attach( new SecurityMonitor());
+        new SecurityMonitor($login);
+        new GeneralLogger($login);
+        new PartnershipTool($login);
         $login->handleLogin('ovidiu', 'constantin','186.052.766.6');
     }
 }

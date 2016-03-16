@@ -1,5 +1,7 @@
 <?php
 namespace src\library\Observer;
+use src\library\Observer\Interfaces\iObservable;
+use src\library\Observer\Interfaces\iObserver;
 /**
  * Created by PhpStorm.
  * User: ovidiu
@@ -25,10 +27,9 @@ class Login implements iObservable
             return (! ($a === $observer )); });
     }
 
-    function notify()
-    {
+    function notify(){
         foreach ($this->observers as $obs) {
-            $obs->update($this);
+            $obs->doUpdate($this);
         }
     }
 
