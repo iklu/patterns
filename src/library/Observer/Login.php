@@ -17,16 +17,30 @@ class Login implements iObservable
     const LOGIN_ACCESS = 3;
     private $status = array();
 
-
+    /**
+     * Attach function for observers
+     *
+     * @param iObserver $observer
+     */
     function attach( iObserver $observer ) {
         $this->observers[] = $observer;
     }
 
+    /**
+     * Detach function for observers
+     *
+     * @param iObserver $observer     *
+     */
     function detach( iObserver $observer ) {
         $this->observers = array_filter( $this->observers, function( $a ) use ( $observer ) {
             return (! ($a === $observer )); });
     }
 
+    /**
+     * Trigger the observer
+     *
+     * Call the doUpdate function from the observer
+     */
     function notify(){
         foreach ($this->observers as $obs) {
             $obs->doUpdate($this);
@@ -56,6 +70,7 @@ class Login implements iObservable
                 $isvalid = false;
                 break;
         }
+        //trigger the observer
         $this->notify();
         return $isvalid;
     }

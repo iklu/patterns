@@ -15,6 +15,12 @@ use src\library\Observer\Interfaces\iObservable;
 abstract class LoginObserver implements iObserver
 {
     private $login;
+
+    /**
+     * Attach the observer to Login
+     *
+     * @param Login $login
+     */
     function __construct( Login $login ) {
         $this->login = $login;
         $login->attach( $this );
