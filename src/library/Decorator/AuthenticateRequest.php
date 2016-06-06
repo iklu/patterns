@@ -2,7 +2,7 @@
 namespace src\library\Decorator;
 
 /**
-*This class is component of Decorator design pattern
+*This class is a component of Decorator design pattern
 *
 *@author Ovidiu Dragoi
 */
