@@ -25,11 +25,11 @@
 		<!--<testsuite name="strategy_validation">-->
 			<!--<directory>../tests/library/StrategyValidation</directory>-->
 		<!--</testsuite>-->
-	   <!--<testsuite name="decorator_pattern">-->
-			<!--<directory>../tests/library/Decorator</directory>-->
-		<!--</testsuite>-->
-		<testsuite name="facade_pattern">
-			<directory>../tests/library/Facade</directory>
+	    <testsuite name="decorator_pattern">
+			<directory>../tests/library/Decorator</directory>
 		</testsuite>
+		<!--<testsuite name="facade_pattern">-->
+			<!--<directory>../tests/library/Facade</directory>-->
+		<!--</testsuite>-->
     </testsuites>
 </phpunit>
