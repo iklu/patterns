@@ -6,8 +6,10 @@ use src\library\Decorator\StructureRequest;
 use src\library\Decorator\LogRequest;
 use src\library\Decorator\MainProcess;
 use src\library\Decorator\RequestHelper;
+use PHPUnit\Framework\TestCase;
 
-class DecoratorTest extends \PHPUnit_Framework_TestCase
+
+class DecoratorTest extends TestCase
 {
 	public function testAuthenticateRequest()
 	{

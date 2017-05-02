@@ -6,8 +6,9 @@ use src\library\Strategy\Lesson;
 use src\library\Strategy\TimedCostStrategy;
 use src\library\Strategy\FixedCostStrategy;
 use src\library\Strategy\RegistrationManager;
+use PHPUnit\Framework\TestCase;
 
-class LessonTest extends \PHPUnit_Framework_TestCase
+class LessonTest extends TestCase
 {
 	public function testLessonCostAndChargeType()
 	{

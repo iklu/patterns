@@ -1,8 +1,9 @@
 <?php
 namespace tests\library\Singleton;
 use src\library\Singleton\Preferences;
+use PHPUnit\Framework\TestCase;
 
-class LessonTest extends \PHPUnit_Framework_TestCase
+class LessonTest extends TestCase
 {
 	public function testPreferences()
 	{

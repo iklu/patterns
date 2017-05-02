@@ -4,13 +4,14 @@ use src\library\Observer\Login;
 use src\library\Observer\Monitors\GeneralLogger;
 use src\library\Observer\Monitors\PartnershipTool;
 use src\library\Observer\Monitors\SecurityMonitor;
+use PHPUnit\Framework\TestCase;
 /**
  * Created by PhpStorm.
  * User: ovidiu
  * Date: 10.03.2016
  * Time: 15:55
  */
-class ObserverTest extends \PHPUnit_Framework_TestCase
+class ObserverTest extends TestCase
 {
     public function testLogin(){
         echo "TEST LOGIN ==========================================================>\n";

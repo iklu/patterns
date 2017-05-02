@@ -6,8 +6,9 @@ use src\library\Inheritance\Discount;
 use src\library\Inheritance\ShopProductManager;
 use src\library\Inheritance\XmlProductWriter;
 use src\library\Inheritance\TestAccessInterface;
+use PHPUnit\Framework\TestCase;
 
-class ShopProductManagerTest  extends \PHPUnit_Framework_TestCase
+class ShopProductManagerTest  extends TestCase
 {
 	public function testCreateCdProduct()
 	{

@@ -1,13 +1,11 @@
 <?php
-namespace tests\library\Factory;
 
+namespace src\tests\library\AbstractFactory;
 
-use src\library\Factory\BloggsCommsManager;
-use PHPUnit\Framework\TestCase;
+use src\library\AbstractFactory\BloggsCommsManager;
 
-class FactoryTest extends TestCase
-{
-	public function testBloggsCommsManager()
+class AbstractFactoryTest extends \PHPUnit_Framework_TestCase {
+    public function testBloggsCommsManager()
 	{
 		$mgr = new BloggsCommsManager();
 		print $mgr->getHeaderText();

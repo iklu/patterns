@@ -3,14 +3,9 @@ namespace tests\library\User;
 
 
 use src\library\User\User;
+use PHPUnit\Framework\TestCase;
 
-
-
-
-
-
-
-class UserTest extends \PHPUnit_Framework_TestCase
+class UserTest extends TestCase
 {
 	/**
 	 * @var \Application\User

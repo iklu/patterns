@@ -4,13 +4,13 @@ namespace tests\library\User;
 use src\library\User\UserManager;
 use src\library\User\User;
 use src\library\User\Mail;
-
+use PHPUnit\Framework\TestCase;
 /**
  * Testing class for UserManager
  * @author Ovidiu
  *
  */
-class UserManagerTest extends \PHPUnit_Framework_TestCase
+class UserManagerTest extends TestCase
 {
 	public function testCreateUser()
 	{

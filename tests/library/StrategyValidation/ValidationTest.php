@@ -5,9 +5,10 @@ use src\library\StrategyValidation\Validation\Numeric;
 use src\library\StrategyValidation\Validation\Email;
 use src\library\StrategyValidation\Validation;
 use src\library\StrategyValidation\Validation\ValidationStrategy;
+use PHPUnit\Framework\TestCase;
 
 
-class ValidationTest extends \PHPUnit_Framework_TestCase
+class ValidationTest extends TestCase
 {
 	public function testValidation()
 	{

@@ -2,8 +2,9 @@
 namespace tests\library\Inheritance;
 use src\library\Inheritance\BookProduct;
 use src\library\Inheritance\CdProduct;
+use PHPUnit\Framework\TestCase;
 
-class ShopProductTest extends \PHPUnit_Framework_TestCase
+class ShopProductTest extends TestCase
 {
 	
 	public function testCdProduct()

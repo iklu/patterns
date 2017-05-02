@@ -4,8 +4,9 @@ use src\library\Prototype\CommsManager;
 use src\library\Prototype\BloggsApptEncoder;
 use src\library\Prototype\BloggsTtdEncoder;
 use src\library\Prototype\BloggsContactEncoder;
+use PHPUnit\Framework\TestCase;
 
-class PrototypeTest extends \PHPUnit_Framework_TestCase
+class PrototypeTest extends TestCase
 {
 	public function testBloggsCommsManager()
 	{

@@ -4,8 +4,10 @@ use src\library\Composite\Army;
 use src\library\Composite\Archer;
 use src\library\Composite\LaserCannonUnit;
 use src\library\Composite\UnitScript;
+use PHPUnit\Framework\TestCase;
 
-class CompositeTest extends \PHPUnit_Framework_TestCase
+
+class CompositeTest extends TestCase
 {
 	public function testAddUnit()
 	{       //archer 4

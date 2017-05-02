@@ -1,8 +1,10 @@
 <?php
 namespace tests\library\Inheritance;
 use src\library\Configuration\Configuration;
+use PHPUnit\Framework\TestCase;
 
-class ConfigurationTest extends \PHPUnit_Framework_TestCase
+
+class ConfigurationTest extends TestCase
 {
 	public function testConfiguration()
 	{

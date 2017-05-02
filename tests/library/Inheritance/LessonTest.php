@@ -3,8 +3,9 @@ namespace tests\library\Inheritance;
 use src\library\Inheritance\Lecture;
 use src\library\Inheritance\Seminar;
 use src\library\Inheritance\Lesson;
+use PHPUnit\Framework\TestCase;
 
-class LessonTest extends \PHPUnit_Framework_TestCase
+class LessonTest extends \TestCase
 {
 	public function testLectureCostAndChargeType()
 	{
