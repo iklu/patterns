@@ -5,7 +5,7 @@ use src\library\Inheritance\Seminar;
 use src\library\Inheritance\Lesson;
 use PHPUnit\Framework\TestCase;
 
-class LessonTest extends \TestCase
+class LessonTest extends TestCase
 {
 	public function testLectureCostAndChargeType()
 	{

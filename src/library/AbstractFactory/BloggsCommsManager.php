@@ -2,6 +2,10 @@
 
 namespace src\library\AbstractFactory;
 
+use src\library\Factory\BloggsApptEncoder;
+use src\library\Factory\BloggsContactEncoder;
+use src\library\Factory\BloggsTtdEncoder;
+
 class BloggsCommsManager extends CommsManager
 {
     public function getHeaderText() {
@@ -17,11 +21,9 @@ class BloggsCommsManager extends CommsManager
             case self::TTD:
                 return new BloggsTtdEncoder();
         }
-    }
+    }  
 
-  
-
-    function getFooterText() {
+    public function getFooterText() {
         return "BloggsCal footer\n";
     }
 }

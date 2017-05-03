@@ -3,15 +3,15 @@
 namespace src\tests\library\AbstractFactory;
 
 use src\library\AbstractFactory\BloggsCommsManager;
+use PHPUnit\Framework\TestCase;
 
-class AbstractFactoryTest extends \PHPUnit_Framework_TestCase {
+class AbstractFactoryTest extends TestCase {
     public function testBloggsCommsManager()
 	{
 		$mgr = new BloggsCommsManager();
 		print $mgr->getHeaderText();
-		print $mgr->getApptEncoder()->encode();
-		print $mgr->getTtdEncoder()->encode();
-		print $mgr->getContactEncoder()->encode();
+		$m = $mgr->make(2)->encode();
 		print $mgr->getFooterText();
+		$this->assertEquals("Appoitment data encode in TtdCal format \n", $m);
 	}
 }

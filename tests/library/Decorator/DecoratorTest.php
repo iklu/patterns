@@ -14,7 +14,8 @@ class DecoratorTest extends TestCase
 	public function testAuthenticateRequest()
 	{
 		$process = new AuthenticateRequest(new StructureRequest(new LogRequest(new MainProcess())) );
+		$data = $process->process( new RequestHelper() );
 
-		//$process->process( new RequestHelper() );
+		$this->assertNull($data);
 	}
 }
