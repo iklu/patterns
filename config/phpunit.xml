@@ -30,9 +30,18 @@
 		</testsuite>
 		<testsuite name="facade_pattern">
 			<directory>../tests/library/Facade</directory>
-		</testsuite>-->
+		</testsuite>
 		<testsuite name="abstract_factory">
 			<directory>../tests/library/AbstractFactory</directory>
+		</testsuite>-->
+		<testsuite name="composite_pattern">
+			<directory>../tests/library/Composite</directory>
+		</testsuite>
+		<!--<testsuite name="abstract_factory">
+			<directory>../tests/library/AbstractFactory</directory>
+		</testsuite>-->
+		<testsuite name="visitor_pattern">
+			<directory>../tests/library/Visitor</directory>
 		</testsuite>
     </testsuites>
 </phpunit>

@@ -27,6 +27,8 @@ class CompositeTest extends TestCase
         
         $join_second_army = UnitScript::joinExisting($joined_army, $under_army);
     
-        echo    $join_second_army->bombardStrength();
+        echo   "Boombard Strength: ".$join_second_army->bombardStrength();
+        
+        $this->assertTrue(true, true);
     }
 }
